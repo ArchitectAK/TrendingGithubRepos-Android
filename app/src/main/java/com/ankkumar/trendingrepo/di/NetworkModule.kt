@@ -1,6 +1,7 @@
 package com.ankkumar.trendingrepo.di
 
 import android.content.Context
+import com.ankkumar.trendingrepo.retrofit.APIService
 import com.ankkumar.trendingrepo.utils.CheckNetwork
 import com.ankkumar.trendingrepo.utils.NetworkException
 import com.ankkumar.trendingrepo.utils.NetworkInterceptor
