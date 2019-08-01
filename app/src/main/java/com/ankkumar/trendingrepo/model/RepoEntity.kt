@@ -4,7 +4,7 @@ import androidx.room.Entity
 
 
 @Entity(tableName = "RepoTable")
-data class RepoModel(
+data class RepoEntity(
     val author: String,
     val name: String,
     val avatar: String,
