@@ -1,6 +1,9 @@
 package com.ankkumar.trendingrepo.di
 
 import android.content.Context
+import com.ankkumar.trendingrepo.utils.CheckNetwork
+import com.ankkumar.trendingrepo.utils.NetworkException
+import com.ankkumar.trendingrepo.utils.NetworkInterceptor
 import com.ankkumar.trendingrepo.utils.Utils
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -52,7 +55,7 @@ class NetworkModule {
                 get() = CheckNetwork.isNetworkConnected(context)
 
             override fun onInternetUnavailable() {
-                throw NetworkException(context)
+                throw NetworkException()
             }
         }))
 
