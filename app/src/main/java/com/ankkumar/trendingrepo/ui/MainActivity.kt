@@ -1,4 +1,4 @@
-package com.ankkumar.trendingrepo
+package com.ankkumar.trendingrepo.ui
 
 import dagger.android.support.DaggerAppCompatActivity
 
