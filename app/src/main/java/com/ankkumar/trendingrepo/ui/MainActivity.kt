@@ -10,6 +10,7 @@ import com.ankkumar.trendingrepo.R
 import com.ankkumar.trendingrepo.model.RepoEntity
 import com.ankkumar.trendingrepo.utils.CheckNetwork
 import dagger.android.support.DaggerAppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {

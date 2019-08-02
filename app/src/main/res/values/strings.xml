@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TrendingRepo</string>
+    <string name="default_text">Nothing to show</string>
 </resources>
