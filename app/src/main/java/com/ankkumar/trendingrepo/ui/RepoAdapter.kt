@@ -9,7 +9,7 @@ import com.ankkumar.trendingrepo.R
 import com.ankkumar.trendingrepo.model.RepoEntity
 import kotlinx.android.synthetic.main.item_repo.view.*
 
-class RepoAdapter(var context: Context, private val albumList: ArrayList<RepoEntity>) :
+class RepoAdapter(var context: Context, private val list: ArrayList<RepoEntity>) :
     RecyclerView.Adapter<RepoAdapter.ViewHolder>() {
 
 
@@ -22,24 +22,25 @@ class RepoAdapter(var context: Context, private val albumList: ArrayList<RepoEnt
 
     //this method is binding the data on the list
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bindItems(albumList[position])
+        holder.bindItems(list[position])
     }
 
     //this method is giving the size of the list
     override fun getItemCount(): Int {
-        return albumList.size
+        return list.size
     }
 
     //the class is hodling the list view
     open inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bindItems(dashBoardModel: RepoEntity) {
-            itemView.heading.text = dashBoardModel.author
+        fun bindItems(repoEntity: RepoEntity) {
+            itemView.author.text = repoEntity.author
+            itemView.repoName.text = repoEntity.name
         }
     }
 
     fun addList(list: List<RepoEntity>) {
-        albumList.clear()
-        albumList.addAll(list)
+        this.list.clear()
+        this.list.addAll(list)
         notifyDataSetChanged()
     }
 
