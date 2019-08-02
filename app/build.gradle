@@ -59,7 +59,7 @@ dependencies {
     // If you use the support libraries
     kapt "com.google.dagger:dagger-android-processor:2.21"
 
-    kapt 'androidx.room:room-compiler:2.0.0'
+    kapt 'androidx.room:room-compiler:2.1.0'
 
 
     //glide

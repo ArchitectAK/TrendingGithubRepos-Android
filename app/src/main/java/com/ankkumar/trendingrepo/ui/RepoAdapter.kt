@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ankkumar.trendingrepo.R
 import com.ankkumar.trendingrepo.model.RepoEntity
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_repo.view.*
 
 class RepoAdapter(var context: Context, private val list: ArrayList<RepoEntity>) :
@@ -35,6 +36,12 @@ class RepoAdapter(var context: Context, private val list: ArrayList<RepoEntity>)
         fun bindItems(repoEntity: RepoEntity) {
             itemView.author.text = repoEntity.author
             itemView.repoName.text = repoEntity.name
+
+            Glide
+                .with(itemView.avatar.context)
+                .load(repoEntity.avatar)
+                .fitCenter()
+                .into(itemView.avatar)
         }
     }
 
