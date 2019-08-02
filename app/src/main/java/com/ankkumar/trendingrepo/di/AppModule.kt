@@ -25,6 +25,4 @@ class AppModule {
     fun provideRepository(apiService: APIService, database: AppDatabase): Repository {
         return Repository(apiService, database)
     }
-
-
 }
