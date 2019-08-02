@@ -1,4 +1,4 @@
-package com.ankkumar.trendingrepo.di
+package com.ankkumar.trendingrepo.di.module
 
 import android.content.Context
 import com.ankkumar.trendingrepo.retrofit.APIService
