@@ -2,7 +2,7 @@
 Project using App Architecture Components with Retrofit and Dagger2 which fetches and displays Trending repositories from github.
 
 
-![](https://raw.githubusercontent.com/AnkitDroidGit/TrendingGithubRepos-Kotlin-Android/master/screencap.png)
+![](https://github.com/AnkitDroidGit/TrendingGithubRepos-Android/blob/master/screencap.png)
 
 
 
